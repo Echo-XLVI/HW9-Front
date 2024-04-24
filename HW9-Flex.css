@@ -1,0 +1,47 @@
+body {
+  font-family: "Vazirmatn";
+  font-size: 22px;
+}
+.inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.container {
+  width: 1500px;
+  height: auto;
+  margin: 10px auto 10px auto;
+  padding: 40px 40px;
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #301934, #6b00d8);
+}
+
+.container > div {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.intro {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .inner-container {
+    width: 540px;
+    grid-template-columns: 1fr;
+  }
+}
